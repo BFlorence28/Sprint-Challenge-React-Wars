@@ -5,6 +5,7 @@ import Cards from "./components/card";
 import styled from "styled-components";
 import axios from "axios";
 import "./components/StarWars.css";
+// import Title from "./components/card";
 
 
 const Container = styled.div`
@@ -16,6 +17,15 @@ const Container = styled.div`
   margin: 0 auto;
   background-color: rgb(0, 0, 0, 0.4);
 `;
+
+const Title = styled.h1`
+    text-align: center;
+    color: palevioletred;
+    margin: auto 300px ;
+    padding: 20px;
+    text-decoration: underline;
+  `;
+
 
 
 const App = () => {
@@ -38,7 +48,9 @@ const App = () => {
 
   return (
     <div>
-      <h1 className="Header">React Wars</h1>
+      <Title>
+        <h1 className="Header">React Wars</h1>
+      </Title>
         <div className="App">
           <Container>
             {state.map(value => {
