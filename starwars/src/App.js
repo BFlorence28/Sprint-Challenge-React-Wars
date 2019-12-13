@@ -4,13 +4,19 @@ import {useState, useEffect} from "react";
 import Cards from "./components/card";
 import styled from "styled-components";
 import axios from "axios";
+import "./components/StarWars.css";
 
 
 const Container = styled.div`
-  width: 50%
-  height: auto;
-
+  width: 75%;
+  border: 5px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0, 0.4);
 `;
+
 
 const App = () => {
   const [state, setState] = useState([]);
