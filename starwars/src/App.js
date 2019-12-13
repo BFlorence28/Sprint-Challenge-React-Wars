@@ -2,7 +2,9 @@ import React from 'react';
 import './App.css';
 import {useState, useEffect} from "react";
 import Cards from "./components/card";
-const axios = require("axios");
+import styled from "styled-components";
+import axios from "axios";
+
 
 const Container = styled.div`
   width: 50%
