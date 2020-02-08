@@ -26,7 +26,7 @@ const Title = styled.h1`
     text-decoration: underline;
   `;
 
-
+/* style above */
 
 const App = () => {
   const [state, setState] = useState([]);
@@ -61,6 +61,7 @@ const App = () => {
     </div>
   );
 };
+
 
 export default App;
 

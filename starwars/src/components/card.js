@@ -6,7 +6,7 @@ const BabyYodaCard = styled.div`
     height: 200px;
     width: 49%;
     `;
-
+// style above
 
     const Cards = props => {
         console.log("props", props.value);
